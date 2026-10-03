@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/assets/css/site.css"><title>Robots, and the things you cannot un-publish &middot; Jack Ripsley</title></head><body><div class="wrap">
+<header class="site">
+  <h1><a href="/index.html">Jack Ripsley</a></h1>
+  <p class="tag">Backend engineer at Lumen Labs &middot; Colombo</p>
+  <nav><a href="/index.html">home</a><a href="/about.html">about</a><a href="/blog/index.html">blog</a><a href="/social/index.html">photos</a></nav>
+</header>
+<h2>Robots, and the things you cannot un-publish</h2>
+<p class="meta">7 February 2024</p>
+<img class="hero" src="/assets/img/hdr_robots.jpg" alt="">
+<p>A thing I learned the hard way: a search engine will cheerfully index anything it can
+reach, including the half-finished rubbish you forgot was still reachable.</p>
+<p>Last year someone emailed me quoting a sentence I had definitely never published. It was
+from a post I abandoned months earlier and left sitting on the server. Google had found it,
+indexed it, and served it to a total stranger.</p>
+<p>The standard fix is a file called <code>robots.txt</code>. It lives at the root of a
+site &mdash; stick <code>/robots.txt</code> on the end of any domain and you can read it,
+mine included. It is a plain text list of paths you are asking crawlers to leave alone:</p>
+<pre><code>User-agent: *
+Disallow: /some-folder/</code></pre>
+<p>That is the entire format. Every site you have ever used has one. Go and look at a few
+&mdash; it is one of those things nobody tells you exists, and then you start seeing it
+everywhere.</p>
+<p>Here is the part that took me an embarrassingly long time to internalise.
+<strong>robots.txt is a request, not a lock.</strong> It politely asks well-behaved
+crawlers not to index a path. It does absolutely nothing to stop a human being from opening
+the file, reading exactly which folders you would rather they did not visit, and typing one
+of them straight into the address bar.</p>
+<p>Which, now that I write it down, means a robots.txt is a tidy little list of everything
+you are most embarrassed about, published at an entirely predictable URL, for anyone who
+thinks to look.</p>
+<p>If something genuinely must not be seen, it needs a password. Not a polite note.</p>
+<p>Anyway. Mine is up, the crawlers have backed off, and the half-finished posts have
+stopped turning up in search results.</p>
+<footer class="site">&copy; Jack Ripsley. Opinions my own, obviously.</footer>
+</div></body></html>

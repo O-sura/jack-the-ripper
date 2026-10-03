@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/assets/css/site.css"><title>Reading a password-protected zip from Python? &middot; DevForum</title></head><body><div class="wrap">
+<header class="site"><h1><a href="/forum/thread-4471.html">DevForum</a></h1>
+<p class="tag">Thread #4471 &middot; Python &middot; 14 replies</p></header>
+<h2>Reading a password-protected zip from Python?</h2>
+<div class="thread">
+<div class="post"><p class="who"><b>arunk_dev</b> &middot; 16 Aug 2023</p>
+<p>Has anyone got a clean way to read from an encrypted zip in Python without shelling out
+to the <code>unzip</code> binary? The standard library seems to only handle the legacy
+ZipCrypto stuff.</p></div>
+
+<div class="post"><p class="who"><b>jripsley92</b> &middot; 16 Aug 2023</p>
+<p>Legacy ZipCrypto is exactly what <code>zipfile</code> handles, so if you control how the
+archive gets made you are fine &mdash; create it with the older encryption and
+<code>setpassword()</code> just works. That is what I do for mine.</p>
+<p class="sig">jack.ripsley92@mailbox.invalid &middot; Colombo &middot; opinions mine</p></div>
+
+<div class="post"><p class="who"><b>arunk_dev</b> &middot; 17 Aug 2023</p>
+<p>Off topic, but you mentioned once that you generate those passwords with something you
+wrote yourself. Any chance of posting it?</p></div>
+
+<div class="post"><p class="who"><b>jripsley92</b> &middot; 18 Aug 2023</p>
+<p>Wrote it up properly instead, script and all:
+<a href="/blog/my-password-generator.html">I stopped trusting password managers</a>.</p>
+<p>Before anyone starts: yes, I have heard the arguments.</p>
+<p class="sig">jack.ripsley92@mailbox.invalid &middot; Colombo &middot; opinions mine</p></div>
+
+<div class="post"><p class="who"><b>m_fernando</b> &middot; 18 Aug 2023</p>
+<p>&ldquo;It works for me&rdquo; is how every incident report begins.</p></div>
+</div>
+<footer class="site">&copy; Jack Ripsley. Opinions my own, obviously.</footer>
+</div></body></html>

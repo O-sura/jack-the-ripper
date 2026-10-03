@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /drafts/
+Disallow: /assets/raw/
+
+# please don't index the drafts, they're not finished

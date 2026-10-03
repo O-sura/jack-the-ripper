@@ -1,0 +1,14 @@
+# ─── ANSWER KEY ────────────────────────────────────────────
+INSTRUCTOR/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# local scratch
+*.local
+scratch/
