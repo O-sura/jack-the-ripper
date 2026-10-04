@@ -106,6 +106,10 @@ it again.
 They unlock roughly in order. If you are stuck on one, the thing you are missing is
 usually on the *previous* one.
 
+**There is also a fifth flag.** Nobody needs it. It unlocks nothing, it is not on the list
+above, and you can finish the lab perfectly well without ever seeing it. It is there for
+whoever goes back and looks at something properly the second time.
+
 ### Things worth remembering
 
 - A web page shows you what it wants to show you. **View the source.** Look at what the
